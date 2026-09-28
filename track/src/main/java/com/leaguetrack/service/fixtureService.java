@@ -38,7 +38,7 @@ public class fixtureService {
 
                     newFixture.setTeam1Id(teams.get(i).getId());
                     newFixture.setTeam2Id(teams.get(j).getId());
-                    newFixture.setMatchDate("TBD");
+                    newFixture.setMatchDate("2026-10-" + (j + 1));
                     newFixture.setStatus("Scheduled");
 
                     fixtureRepository.save(newFixture);
